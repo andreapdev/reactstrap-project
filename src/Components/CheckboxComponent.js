@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, FormGroup, Label, Input } from "reactstrap";
+import { Col, Form, FormGroup, Label, Input } from "reactstrap";
 
 const CheckboxComponent = (props) => {
   const checkboxStyle = {
@@ -8,7 +8,7 @@ const CheckboxComponent = (props) => {
       height: "100%"
   }
   return (
-    <div className={props.className} style={checkboxStyle}>
+    <Col style={checkboxStyle}>
       <Form>
         <FormGroup check>
           <Label check>
@@ -21,7 +21,7 @@ const CheckboxComponent = (props) => {
           </Label>
         </FormGroup>
       </Form>
-    </div>
+    </Col>
   );
 };
 

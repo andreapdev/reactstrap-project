@@ -1,5 +1,5 @@
 import React from "react";
-import {Form, Input} from "reactstrap";
+import { Col, Form, Input } from "reactstrap";
 
 const DropdownComponent = (props) => {
   const dropdownStyle = {
@@ -9,7 +9,7 @@ const DropdownComponent = (props) => {
     lineHeight: "100%"
   };
   return (
-    <div className={props.className} style={dropdownStyle}>
+    <Col xs={props.xs} style={dropdownStyle}>
         <Form>
             <Input type="select">
                 <option selected>Location</option>
@@ -20,7 +20,7 @@ const DropdownComponent = (props) => {
                 <option>America</option>
             </Input>
         </Form>
-    </div>
+    </Col>
   );
 };
 

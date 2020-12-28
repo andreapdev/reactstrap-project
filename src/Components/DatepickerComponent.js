@@ -1,5 +1,5 @@
 import React from "react";
-import { Input, Label } from "reactstrap";
+import { Col, Input, Label } from "reactstrap";
 
 const DatepickerComponent = (props) => {
   const datepickerStyle = {
@@ -8,11 +8,11 @@ const DatepickerComponent = (props) => {
     lineHeight: "100%"
   };
   return (
-    <div className={props.className} style={datepickerStyle}>
+    <Col xs={props.xs} style={datepickerStyle}>
       <Label />
       Pick a date
       <Input type="date" />
-    </div>
+    </Col>
   );
 };
 

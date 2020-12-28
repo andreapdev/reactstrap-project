@@ -1,5 +1,7 @@
 import React from "react";
-import { Card, CardBody, CardImg } from "reactstrap";
+import { Col, Card, CardBody, CardImg } from "reactstrap";
+// import image from "/home/andrea/Documentos/IT Academy/React/reactstrap-project/src/img/blue-flowers.jpg";
+
 
 const CardComponent = (props) => {
   const cardStyle = {
@@ -9,12 +11,12 @@ const CardComponent = (props) => {
   };
 
   return (
-    <div className={props.className} style={cardStyle}>
+    <Col xs={props.xs} style={cardStyle}>
       <Card>
-        <CardImg src="/reactstrap-project/assets/blue-flowers.jpg" alt="blue flowers"/>
+        {/* <CardImg src={require(image)} alt="blue flowers"/> */}
         <CardBody>Blue Flowers</CardBody>
       </Card>
-    </div>
+    </Col>
   );
 };
 

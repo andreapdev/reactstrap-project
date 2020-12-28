@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form, Input, Label} from 'reactstrap';
+import { Col, Form, Input, Label } from 'reactstrap';
 
 const FormComponent = props => {
     const formStyle = {
@@ -8,13 +8,13 @@ const FormComponent = props => {
         lineHeight: "100%"
     };
     return(
-        <div className={props.className} style={formStyle}>
+        <Col xs={props.xs} md={props.md} style={formStyle}>
             <Form>
                 <Label><Input type="text" placeholder="Name"></Input></Label>
                 <Label><Input type="text" placeholder="Last Name"></Input></Label>
                 <Label><Input type="email" placeholder="Email"></Input></Label>
             </Form>
-        </div>
+        </Col>
     );
 };
 

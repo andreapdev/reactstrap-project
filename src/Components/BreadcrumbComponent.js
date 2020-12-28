@@ -1,5 +1,5 @@
 import React from "react";
-import { Breadcrumb, BreadcrumbItem } from "reactstrap";
+import { Col, Breadcrumb, BreadcrumbItem } from "reactstrap";
 
 const BreadcrumbComponent = (props) => {
   const breadStyle = {
@@ -10,13 +10,13 @@ const BreadcrumbComponent = (props) => {
   };
 
   return (
-    <div className={props.className} style={breadStyle}>
+    <Col xs={props.xs} style={breadStyle}>
       <Breadcrumb>
         <BreadcrumbItem>Home</BreadcrumbItem>
         <BreadcrumbItem>React</BreadcrumbItem>
         <BreadcrumbItem>Reactstrap</BreadcrumbItem>
       </Breadcrumb>
-    </div>
+    </Col>
   );
 };
 

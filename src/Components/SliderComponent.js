@@ -1,5 +1,5 @@
 import React from "react";
-import { Input, Label } from "reactstrap";
+import { Col, Input, Label } from "reactstrap";
 
 const SliderComponent = (props) => {
   const sliderStyle = {
@@ -8,7 +8,7 @@ const SliderComponent = (props) => {
     lineHeight: "100%",
   };
   return (
-    <div className={props.className} style={sliderStyle}>
+    <Col style={sliderStyle}>
       <Label for="slider-1">
         Slider 1
         <Input type="range" id="slider-1" />
@@ -17,7 +17,7 @@ const SliderComponent = (props) => {
         Slider 2
         <Input type="range" id="slider-2" />
       </Label>
-    </div>
+    </Col>
   );
 };
 
