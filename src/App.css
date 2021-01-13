@@ -1,0 +1,7 @@
+.App{
+  margin-top: 2rem;
+  padding: 0;
+  min-height: 50vh;
+  position: relative;
+  background-color: blueviolet;
+}
